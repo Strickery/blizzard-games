@@ -3,7 +3,7 @@ module.exports = {
     title: `Blizzard Games`,
     description: `Here you will find some of the games that the company Blizzard has released.`,
     author: `@gatsbyjs`,
-    siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
+    siteUrl: `https://josha-blizzardgames.netlify.app/`,
   },
   plugins: [
     `gatsby-plugin-image`,
