@@ -10,6 +10,8 @@ import {
   section,
   featureGame,
   games,
+  form,
+  contactForm,
 } from "../page.module.css"
 import Game from "../components/game.js"
 
@@ -46,6 +48,19 @@ const IndexPage = ({
           return <Game slug={`games/${game.slug}`} key={game.id} game={game} />
         })}
         </div>
+        <h2 className={featureGame}>Contact me!</h2>
+      </section>
+      <section className={form}>
+        <form className={contactForm} name="contact" method="POST" data-netlify="true">
+            <label>Your Name:</label>
+            <input type="text" name="name" required={true} />
+            <label>Your Email:</label>
+            <input type="email" name="email" required={true} />
+            <label>Message:</label>
+            <textarea name="message" required={true}></textarea>
+            <input type="hidden" name="form-name" value="contact" />
+            <button type="submit">Send</button>
+        </form>
       </section>
     </Layout>
   )
